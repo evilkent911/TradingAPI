@@ -11,6 +11,8 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
+using InterviewQuestionTradingAPI.Services;
+using MockTradingApi;
 
 namespace InterviewQuestionTradingAPI
 {
@@ -26,7 +28,8 @@ namespace InterviewQuestionTradingAPI
         // This method gets called by the runtime. Use this method to add services to the container.
         public void ConfigureServices(IServiceCollection services)
         {
-
+            services.AddSingleton<ITradingApi, TradingApi>();
+            services.AddSingleton<PriceServices>();
             services.AddControllers();
             services.AddSwaggerGen(c =>
             {
