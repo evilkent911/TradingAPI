@@ -28,8 +28,10 @@ namespace InterviewQuestionTradingAPI
         // This method gets called by the runtime. Use this method to add services to the container.
         public void ConfigureServices(IServiceCollection services)
         {
+            //inject the trading api for data source
             services.AddSingleton<ITradingApi, TradingApi>();
             services.AddSingleton<PriceServices>();
+
             services.AddControllers();
             services.AddSwaggerGen(c =>
             {
