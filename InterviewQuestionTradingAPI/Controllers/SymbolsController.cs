@@ -4,19 +4,22 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
+using InterviewQuestionTradingAPI.Services;
 using MockTradingApi;
 
 namespace InterviewQuestionTradingAPI.Controllers
 {
     [ApiController]
-    [Route("[controller]")]
+    [Route("api/[controller]")]
     public class SymbolsController : ControllerBase
     {
         private readonly ILogger<SymbolsController> _logger;
+        private readonly PriceServices _services;
 
-        public SymbolsController(ILogger<SymbolsController> logger)
+        public SymbolsController(ILogger<SymbolsController> logger, PriceServices services)
         {
             _logger = logger;
+            _services = services;
         }
 
         [HttpGet]

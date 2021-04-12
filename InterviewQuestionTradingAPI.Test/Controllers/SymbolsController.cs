@@ -16,15 +16,10 @@ namespace InterviewQuestionTradingAPI.Test.Controllers
         public void TestGet()
         {
             //Arrange
-            var mockDi = new Mock<ILogger<SymbolsController>>();
-            var controller = new SymbolsController(mockDi.Object);
 
-            // action
+            //action
 
-            var output = controller.Get();
-
-            //assert 
-            Assert.IsNotEmpty(output);
+            //assert
 
         }
     }
