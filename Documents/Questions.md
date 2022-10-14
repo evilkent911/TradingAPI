@@ -67,9 +67,8 @@ c.	GET /api/price/{symbol}
 •	Return the latest Price of a {symbol}
 
 d.	Get /api/price/{symbol}/history
-•	Return the PriceStats that contains Open, Close, Min and Max, for the current Minute, for a given symbol
+•	Return the PriceStats that contains Open, Close, Min and Max, for the current Minute, for a given symbol. (hint) An extension method could help you with the time
 1.	Open - The first Bid price in the minute
 2.	Close – the last Bid price in the minute
 3.	Min – the lowest Bid price in the minute
-4.	Max – the highest Bid price in the minute 
-•	A extension method will help you
+4.	Max – the highest Bid price in the minute   
