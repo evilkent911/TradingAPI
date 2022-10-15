@@ -1,6 +1,6 @@
 # Interview
 ## Welcome
-Thanks for cloning this project. This project is mean for conducting a technical interview for C# developers.
+Thanks for cloning this project. This project is mean for conducting a technical interview for C# developers.  
 Good luck 🤞 
 
 ### How to submit
