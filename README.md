@@ -64,20 +64,21 @@ public class PriceStats
 ```
 
 ## Questions
-The controllers has been created, you task is to complete these controllers and to full fill the following requirements:
-1.	Create a Web API using .net or .net core that implement the followings:
-a.	GET /api/symbols
+The controllers has been created, you task is to complete these controllers and to full fill the following requirements:  
+
+1.	GET /api/symbols
 •	Return a list of all symbols
 
-b.	GET /api/symbols/{name}
+2.	GET /api/symbols/{name}
 •	Return a single Symbol object with the {name}
 
-c.	GET /api/price/{symbol}
+3.	GET /api/price/{symbol}
 •	Return the latest Price of a {symbol}
 
-d.	Get /api/price/{symbol}/history
-•	Return the PriceStats that contains Open, Close, Min and Max, for the current Minute, for a given symbol. (hint) An extension method could help you with the time
-1.	Open - The first Bid price in the minute
-2.	Close – the last Bid price in the minute
-3.	Min – the lowest Bid price in the minute
-4.	Max – the highest Bid price in the minute   
+4.	Get /api/price/{symbol}/history
+•	Return the PriceStats that contains Open, Close, Min and Max, for the current Minute, for a given symbol. (hint) An extension method could help you with the time  
+
+    a.  Open - The first Bid price in the minute  
+    b.	Close – the last Bid price in the minute  
+    c.	Min – the lowest Bid price in the minute  
+    d.	Max – the highest Bid price in the minute     
