@@ -1,6 +1,12 @@
 # Interview
 ## Welcome
-Thanks for cloning this project. This project is only mean for conducting a technical test for C# developers.
+Thanks for cloning this project. This project is mean for conducting a technical interview for C# developers.
+Good luck 🤞 
+
+### How to submit
+There are a few ways you can submit your answers:
+1. Zip and send the code back to the contacting HR.
+2. Just post your forked project link to HR.
 
 ## Backgrounds
 You are provided a .net standard library that mock a pricing system.
